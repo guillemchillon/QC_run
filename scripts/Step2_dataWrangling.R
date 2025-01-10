@@ -1,4 +1,8 @@
 # Import libraries----
+library(RColorBrewer)
+library(pheatmap)
+library(ggplot2)
+library(ggplotify)
 
 # Transformation, sample clustering and visualization----
 ## Variance stabilizing transformation
@@ -25,24 +29,15 @@ save_table("normalized_counts.txt", normalized_counts)
 
 select <- order(rowMeans(counts(dds,normalized=TRUE)),
                 decreasing=TRUE)[1:20]
-### Heatmap genotype and region
-df <- as.data.frame(colData(dds)[,c("genotype", "region")])
+### Heatmap genotype, region and timepoint
+df <- as.data.frame(colData(dds)[,c("genotype", "region", "timepoint")])
 heatmap_obj <- pheatmap(assay(vsd)[select,], cluster_rows=FALSE, show_rownames=FALSE,
                         cluster_cols=TRUE, annotation_col=df)
 # We should see a clear separation of the samples by genotype and region
 heatmap_gg <- as.ggplot(heatmap_obj$gtable)
 heatmap_gg <- heatmap_gg + labs(caption = paste0("produced on ", format(Sys.time(), "%x %X")))
-save_plot("heatmapCountMatrix_GenotypeVsRegion.pdf", heatmap_gg)
-
-### Heatmap genotype and timepoint
-df <- as.data.frame(colData(dds)[,c("genotype", "timepoint")])
-heatmap_obj <- pheatmap(assay(vsd)[select,], cluster_rows=FALSE, show_rownames=FALSE,
-                        cluster_cols=TRUE, annotation_col=df)
-# We should see a clear separation of the samples by genotype and region
-heatmap_gg <- as.ggplot(heatmap_obj$gtable)
-heatmap_gg <- heatmap_gg + labs(caption = paste0("produced on ", format(Sys.time(), "%x %X")))
-save_plot("heatmapCountMatrix_GenotypeVsTimepoint.pdf", heatmap_gg)
-
+save_plot("heatmapCountMatrix_GenotypeVsRegionVsTimepoint.pdf", heatmap_gg,
+          width = 7, height = 7)
 
 ## sample-sample distances
 sampleDists <- dist(t(assay(vsd)))
@@ -76,3 +71,4 @@ heatmap_gg <- as.ggplot(heatmap_sample$gtable)
 heatmap_gg <- heatmap_gg + labs(caption = paste0("produced on ", format(Sys.time(), "%x %X")))
 save_plot("heatmapSample_GenotypeVsTimepoint.pdf", heatmap_gg)
 # We should see a clear separation of the samples by genotype and region
+

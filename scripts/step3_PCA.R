@@ -1,6 +1,7 @@
 # Import libraries----
 library(DESeq2)
 library(ggplot2)
+library(gridExtra)
 
 # Principal Components Analysis----
 # assay(vsd) <- limma::removeBatchEffect(assay(vsd), batch = vsd$Batch, group = vsd$group)
@@ -59,9 +60,9 @@ p4 <- ggplot(pcaData, aes(PC1, PC2, shape = sex, color =litter)) +
   theme_bw()
 p4
 
-g <- grid.arrange(p1, p2, p3, ncol = 2)
+g <- grid.arrange(p1, p2, p3, p4, ncol = 2)
 
-save_plot("PCA_plot_genotypeVsregion.pdf", g)
+save_plot("PCA_plots.pdf", g, width = 10, height = 10)
 
 # Create a PCA 'small multiples' chart ----
 # this is another way to view PCA laodings to understand impact of each sample on each pricipal component
@@ -122,7 +123,7 @@ pm4 <- ggplot(pca.pivot) +
   theme_bw() +
   coord_flip()
 
-g <- grid.arrange(pm1, pm2, pm3, pm4, ncol = 2)
+g_pm <- grid.arrange(pm1, pm2, pm3, pm4, ncol = 2)
 
 
-save_plot("PCA_small_multiples_plot.pdf", g)
+save_plot("PCA_small_multiples_plot.pdf", g_pm, width = 10, height = 10)

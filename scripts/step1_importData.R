@@ -70,7 +70,7 @@ save_table <- function (filename, table, quote=FALSE, row.names=TRUE, col.names=
 }
 
 # Make DESeq2 DataSet----
-path <- "data/counts"
+path <- "data/fastp_counts"
 
 targets <- na.omit(read_csv("241019_STXBP1_BulkRNAseq_librarypreparation.csv"))
 sampleFiles <- grep("*",list.files(path),value=TRUE)

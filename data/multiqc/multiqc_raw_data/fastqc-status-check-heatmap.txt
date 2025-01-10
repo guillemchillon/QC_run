@@ -1,0 +1,17 @@
+.	Basic Statistics	Per Base Sequence Quality	Per Tile Sequence Quality	Per Sequence Quality Scores	Per Base Sequence Content	Per Sequence GC Content	Per Base N Content	Sequence Length Distribution	Sequence Duplication Levels	Overrepresented Sequences	Adapter Content
+Guillem_1_STXBP1_Cortex_RNA_450x2_Sample13_S1_R1_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_1_STXBP1_Cortex_RNA_450x2_Sample13_S1_R2_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_2_STXBP1_Midbrain_RNA_449x4_Sample28_S2_R1_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_2_STXBP1_Midbrain_RNA_449x4_Sample28_S2_R2_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_3_STXBP1_Cerebellum_RNA_454x6_Sample58_S3_R1_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_3_STXBP1_Cerebellum_RNA_454x6_Sample58_S3_R2_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_4_STXBP1_Hippocampus_RNA_463x5_Sample113_S4_R1_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_4_STXBP1_Hippocampus_RNA_463x5_Sample113_S4_R2_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_5_STXBP1_Thalamus_RNA_490x2_Sample92_S5_R1_001	1	1	1	1	0.25	0.5	1	0.5	0.25	0.5	1
+Guillem_5_STXBP1_Thalamus_RNA_490x2_Sample92_S5_R2_001	1	1	1	1	0.25	0.5	1	0.5	0.25	0.5	1
+Guillem_6_STXBP1_Striatum_RNA_337x4_Sample37_S6_R1_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_6_STXBP1_Striatum_RNA_337x4_Sample37_S6_R2_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_7_STXBP1_Striatum_RNA_490x4_Sample85_S7_R1_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_7_STXBP1_Striatum_RNA_490x4_Sample85_S7_R2_001	1	1	1	1	0.25	0.5	1	0.5	0.25	1	1
+Guillem_8_STXBP1_Midbrain_RNA_463x5_Sample114_S8_R1_001	1	1	1	1	0.25	0.5	1	0.5	0.25	0.5	1
+Guillem_8_STXBP1_Midbrain_RNA_463x5_Sample114_S8_R2_001	1	1	1	1	0.25	0.5	1	0.5	0.25	0.5	1

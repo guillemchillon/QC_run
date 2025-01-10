@@ -1,0 +1,2 @@
+[2024-11-15 13:17:40,627] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/isilon/davidson_lab/chillon/RNAseq/qc_reports/fastqc_raw
+[2024-11-15 13:17:41,383] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 16 reports
