@@ -3,5 +3,8 @@
 .RData
 .Ruserdata
 
+# counts files
+data/counts/*.txt
+
 # macOS system files
 .DS_Store
