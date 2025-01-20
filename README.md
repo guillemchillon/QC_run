@@ -7,18 +7,18 @@ This project involves processing RNA-seq data on Respublica before performing st
 ## Directory Structure
 
 - `data/`: 
-  - `counts/`: Raw count matrices for different samples.
+  - `counts/`: Raw count matrices for different samples (not publicly available).
   - `metadata/`: Experimental design files.
   - `multiqc/`: MultiQC quality control reports.
 - `docs/`: Placeholder for additional documentation (e.g., notes, detailed methodology).
 - `renv/`: R environment setup for reproducibility.
 - `results/`: Post-trimming QC.
-  - `figures/`: Plots genereated during the analysis.
+  - `figures/`: Plots generated during the analysis.
   - `reports/`: Output reports.
   - `tables/`: Processed data tables.
   - `versions/`: Archives of result versions.
 - `scripts/`: R scripts for analysis.
-- `renv.lock`: Captures exact versions of R pacakges.
+- `renv.lock`: Captures exact versions of R packages.
 - `README.md`: Project documentation.
 
 ## Workflow Summary
